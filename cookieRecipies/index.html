@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>App</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <script>
+    
+        
+    
+    </script>
+	<div id="homepage" data-role="page">
+		<div data-role="header">
+			<h1>Login</h1>
+		</div>
+		
+		<div data-role="content" class="ui-content">
+            <form id="login_form">
+            
+                <input type="text" name="username" id="username" placeholder="Username" value="" required>
+                <input type="password" name="password" id="password" placeholder="Password" value="" required>
+            
+                <a href="#" id="login_button" data-role="button" data-theme="b">Login</a>
+                <a href="#signup_page" data-role="button" data-theme="a">Signup</a>
+            </form>
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="bottom">
+				<ul>
+					<li><a href="#homepage" data-icon="home">Home</a></li>
+					<li><a href="#signup_page" data-icon="info">Signup</a></li>
+                    <li><a href="#photos_page" data-icon="info">Photo Page</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+    
+    
+    <div id="signup_page" data-role="page">
+        <div data-role="header">
+            <h1>Signup</h1>
+            <a href="" data-rel="back">Back</a>
+        </div>
+    
+        <div data-role="content">
+            <form id="signup_form">
+                <input type="text" name="new_username" id="new_username" placeholder="Username" value="" required>
+                <input type="password" name="new_password" id="new_password" placeholder="Password" value="" required>
+                <input type="submit" value="Create Account" data-theme="b">
+            </form>
+        </div>
+        
+        <div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="bottom">
+				<ul>
+					<li><a href="#homepage" data-icon="home">Home</a></li>
+					<li><a href="#signup_page" data-icon="info">Signup</a></li>
+                    <li><a href="#photos_page" data-icon="info">Photo Page</a></li>
+				</ul>
+			</div>
+		</div>
+    </div>
+    
+    
+    <div id="photos_page" data-role="page">
+        <div data-role="header">
+            <h1>Photo Page</h1>
+            <a href="" data-rel="back">Back</a>
+        </div>
+    
+        <div data-role="content">
+            <h1>Photo Page</h1>
+        </div>
+        
+        <div data-role="footer" data-position="fixed">
+			<div data-role="navbar" data-iconpos="bottom">
+				<ul>
+					<li><a href="#homepage" data-icon="home">Home</a></li>
+					<li><a href="#aboutpage" data-icon="info">Signup</a></li>
+                    <li><a href="#contact" data-icon="info">Photo Page</a></li>
+				</ul>
+			</div>
+		</div>
+    </div>
+    <script src="app/app.js"></script>
+</body>
+</html>

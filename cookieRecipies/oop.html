@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+        
+            function myObject(what) {
+                this.iAm = what;
+                this.whatAmI = function() {
+                    alert('I am' + this.iAm);
+                };
+            };
+        
+            var myNewObject =  new myObject('an object');
+            console.log(myNewObject.iAm);
+            
+        </script>
+    </body>
+</html>
